@@ -6,6 +6,9 @@
         <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Nsisong Akpanudo. Brief introduction of myself.">
         <meta name="author" content="Nsisong Akpanudo">
         <title>WDD 131 - Dynamic Web Fundamentals - Nsisong Akpanudo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/base.css">
         <script src="scripts/getdates.js" defer></script>
     </head>
@@ -21,8 +24,10 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="card">
+    <main>
+
+        <section class="card">
+            <div class="box01">
                 <h2>About me</h2>
                 <img src="images/IMG_9704.jpg" alt="About Image" width="100">
                 <p>My name is Nsisong Akpanudo but my friends call me Okoli. I was born in Nigeria
@@ -31,19 +36,31 @@
                     as a field Support engineer at Juuldaam Hse & Systems Ltd. I love watching football, 
                     and also traveling especially with my wife.
                 </p>
-            </section>
-            <section class="card">
-                <h2>Lagos, Nigeria</h2>
+                <h3>Flag, Nigeria</h3>
                 <img src="images/Nigerian-Flag-2.jpg" alt="Nigerian flag" width="100">
                 <p>The Nigerian flag features a vertical bicolour design of green, white, 
                     and green stripes, with green symbolizing agriculture and white representing peace and unity. 
                     It was designed by Michael Taiwo Akinkunmi and officially 
                     adopted on October 1, 1960, the day Nigeria gained independence.</p>
+            </div>
+        </section>
+        <section class="card">
+            <div class="box02">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to/">Dev to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools </a></li>
+                    <li><a href="http://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://picsum.photos/">Lorem Picsum Image</a></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span>🏋️‍♀️ Nsisong Akpanudo.🏋️‍♀️ Nigeria.</p>
         <p id="lastModified"></p>
     </footer>
-</body>
+    </body>
 </html>
