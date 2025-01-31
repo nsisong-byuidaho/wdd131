@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Abuja - Nsisong Akpanudo</title>
+    <meta name="description" content="A page about the City of Abuja in Nigeria with weather and general information.">
+    <meta name="author" content="Nsisong Akpanudo">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Abuja - Nigeria</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/Abuja-hero-large.webp">
+            <source media="(min-width: 500px )" srcset="images/Abuja-hero-medium.webp">
+            <img src="images/Abuja-hero-small.webp" alt="A photo of a landscape in Abuja, Nigeria">
+        </picture>
+        <section class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Country:</th>
+                    <td>Nigeria</td>
+                </tr>
+                <tr>
+                    <th>Area:</th>
+                    <td>1476 km²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>1,693,000 (2022)</td>
+                </tr>
+                <tr>
+                    <th>Country:</th>
+                    <td>Nigeria</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Abuja</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Nigerian Naira</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>GMT +1:00</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+234</td>
+                </tr>
+                <tr>
+                    <th>internet TLD:</th>
+                    <td>.ng</td>
+                </tr>
+            </table>
+            <!-- <p><strong>Country: </strong>Nigeria</p>
+            <p><strong>c </strong>1476 km²</p>
+            <p><strong>Population: </strong>1,693,000 (2022)</p>
+            <p><strong>Capital: </strong>Abuja</p>
+            <p><strong>Languages: </strong>English</p>
+            <p><strong>Currency: </strong>Nigerian Naira</p>
+            <p><strong>Time Zone: </strong>GMT +1:00</p>
+            <p><strong>Calling Code: </strong>+234</p> -->
+        </section>
+        <section class="card temp">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather Forcast image." width="200">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="current-temp">34</span>&deg; C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="windspeed">8</span> km/h</td>
+                </tr>
+                <tr>
+                    <th>Windchill:</th>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🏋️‍♀️ Nsisong Akpanudo.🏋️‍♀️ Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
