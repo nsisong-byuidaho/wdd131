@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Review Page - Nsisong Akpanudo</title>
+    <meta name="description" content="Review Page.">
+    <meta name="author" content="Nsisong Akpanudo">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body onload="tallyReviews()">
+    <header>
+        <h1>WDD-131 | Review Submission - Nsisong Akpanudo</h1>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Weldone, Review is Successful!</h2>
+            <p>Thank you for your review!</p>
+        </section>
+        <p id="reviews"></p>
+        <a href="form.html">Submit Another Review</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>🏋️‍♀️ Nsisong Akpanudo.🏋️‍♀️ Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
