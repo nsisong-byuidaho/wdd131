@@ -18,35 +18,38 @@
         <h1>WDD-131 | Product Review - Nsisong Akpanudo</h1>
     </header>
     <main>
-        <form action="review.html" method="get" class="wf">
+        <form action="review.html" method="get" id="reviewForm" class="wf">
             <fieldset>
-                <label>Product Name
-                    <select name="product" id="product" required>
-                        <option value="" disabled>Please Choose a Product... </option>
-                    </select>
-                </label>
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Please Choose a Product...</option>
+                </select>
+
                 <label>Overall Rating</label>
                 <div class="star-rating">
-                    <input type="radio" name="stars" id="star-a" value="5"/>
-                    <label for="star-a"></label>
-                    <input type="radio" name="stars" id="star-b" value="4"/>
-                    <label for="star-b"></label>
-                    <input type="radio" name="stars" id="star-c" value="3"/>
-                    <label for="star-c"></label>
-                    <input type="radio" name="stars" id="star-d" value="2"/>
-                    <label for="star-d"></label>
-                    <input type="radio" name="stars" id="star-e" value="1"/>
-                    <label for="star-e"></label>
+                    <input type="radio" name="stars" id="star-5" value="5" required/>
+                    <label for="star-5"></label>
+                    <input type="radio" name="stars" id="star-4" value="4"/>
+                    <label for="star-4"></label>
+                    <input type="radio" name="stars" id="star-3" value="3"/>
+                    <label for="star-3"></label>
+                    <input type="radio" name="stars" id="star-2" value="2"/>
+                    <label for="star-2"></label>
+                    <input type="radio" name="stars" id="star-1" value="1"/>
+                    <label for="star-1"></label>
                 </div>
-                <label>Date of installation<input type="date" name="installation" id="installation" required></label>
+                <label for="installation">Date of Installation</label>
+                <input type="date" name="installation" id="installation" required>
                 <label>What features did you find useful in the product?</label>
                 <p>(check all that apply)</p>
-                <label><input type="checkbox" name="option1" id="option1" value="durability">Durability</label>
-                <label><input type="checkbox" name="option2" id="option2" value="easeofuse">Ease of Use</label>
-                <label><input type="checkbox" name="option3" id="option3" value="performance">Performance</label>
-                <label><input type="checkbox" name="option4" id="option4" value="design">Design</label>
-                <label>Written Review <span class="optional">(optional)</span><textarea name="comment" id="comment" cols="50" rows="5" placeholder="write here..."></textarea></label>
-                <label>User Name <span class="optional">(optional)</span><input type="text" name="name" id="name"></label>
+                <label for="durability"><input type="checkbox" name="features[]" id="durability" value="durability">Durability</label>
+                <label for="ease-of-use"><input type="checkbox" name="features[]" id="ease-of-use" value="easeofuse">Ease of Use</label>
+                <label for="performance"><input type="checkbox" name="features[]" id="performance" value="performance">Performance</label>
+                <label for="design"><input type="checkbox" name="features[]" id="design" value="design">Design</label>
+                <label for="comment">Written Review <span class="optional">(optional)</span></label>
+                <textarea name="comment" id="comment" cols="50" rows="5" placeholder="Write here..."></textarea>
+                <label for="name">User Name <span class="optional">(optional)</span></label>
+                <input type="text" name="name" id="name">
                 <input type="submit" value="Post Review">
             </fieldset>
         </form>
